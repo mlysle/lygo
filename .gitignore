@@ -1,0 +1,10 @@
+*
+!*/
+!/.github/**
+!/archetypes/**
+!/layouts/**
+!/static/**
+!.gitignore
+!.prettierrc
+!package.json
+!README.md

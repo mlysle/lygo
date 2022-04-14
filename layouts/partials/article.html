@@ -1,0 +1,15 @@
+<article>
+  <div class="header-container">
+    <header class="post-title">{{ .Title }}</header>
+  </div>
+  <div>
+    {{ partial "post-header.html" . }}
+    {{ partial "taglist.html" . }}
+    {{ .Content }}
+    <br />
+    {{ if eq .Type "posts" }}
+      {{ partial "email-me.html" . }}
+    {{ end }}
+    <!-- {{ partial "rss.html" . }} -->
+  </div>
+</article>

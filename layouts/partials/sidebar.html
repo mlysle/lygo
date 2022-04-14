@@ -1,0 +1,10 @@
+{{ with .TableOfContents }}
+  {{ if in . "li" }}
+    <nav class="column sidebar">
+      <div class="sticky">
+        <strong>Overview</strong>
+        {{ . }}
+      </div>
+    </nav>
+  {{ end }}
+{{ end }}

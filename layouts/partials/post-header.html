@@ -1,0 +1,16 @@
+{{ $date := .Date.Format "January 2, 2006" }}
+{{ $lastmod := .Lastmod.Format "January 2, 2006" }}
+{{ if eq .Type "posts" }}
+  <div class="post-date">
+    <p>
+      <time datetime="{{ .Date }}">
+        {{ $date }}
+      </time>
+      {{- if ne $lastmod $date }}
+        - (Last updated
+        <time datetime="{{ .Lastmod }}"> {{ $lastmod }}) </time>
+      {{- end }}
+      <a href="{{ .Permalink }}" class="u-url u-uid">[Permalink]</a>
+    </p>
+  </div>
+{{ end }}

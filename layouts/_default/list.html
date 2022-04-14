@@ -1,0 +1,29 @@
+{{ define "main" }}
+  <div class="column">
+    {{ if .Title }}
+      <header class="post-title">
+        {{ .Title }}
+      </header>
+    {{ end }}
+    {{ if .Content }}
+      {{ .Content }}
+    {{ end }}
+    {{ range (where .Pages "Type" "in" (slice "posts")).GroupByDate "2006" }}
+      <h3>{{ .Key }}</h3>
+      <ul>
+        {{ range .Pages }}
+          <li>
+            <h3>
+              <a
+                class="title"
+                href="{{ .Params.externalLink | default .RelPermalink }}"
+              >
+                {{ .Title }}
+              </a>
+            </h3>
+          </li>
+        {{ end }}
+      </ul>
+    {{ end }}
+  </div>
+{{ end }}

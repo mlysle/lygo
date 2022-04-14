@@ -1,0 +1,13 @@
+{{- with .Params.tags -}}
+  {{- $tagsLen := len . -}}
+  {{- if gt $tagsLen 0 -}}
+    <ul class="tags">
+      {{- range $k, $v := . -}}
+        <li class="tag">
+          <a href="{{ "/tags/" | relURL }}{{ $v | urlize }}">{{ $v }}</a>
+        </li>
+      {{ end }}
+      <br />
+    </ul>
+  {{- end -}}
+{{- end -}}
