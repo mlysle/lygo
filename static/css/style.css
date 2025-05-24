@@ -112,7 +112,7 @@ main {
 }
 
 @media screen and (min-width: 1024px) {
-  .menu,
+  .navbar-menu,
   main {
     max-width: 1344px;
   }
@@ -133,13 +133,20 @@ main {
   padding: 0 12px;
   box-sizing: border-box;
   display: flex;
-  align-items: stretch;
-  gap: 12px;
+  margin: 0 auto;
+  gap: 2rem;
+  padding: 12px;
   list-style: none;
+  align-items: baseline;
+}
+
+.navbar-title {
+  font-size: 1.125rem;
+  margin-right: auto;
 }
 
 .navbar-item {
-  line-height: 3;
+  font-size: 0.875rem;
 }
 
 .blog-posts {

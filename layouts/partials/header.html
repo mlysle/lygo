@@ -1,8 +1,14 @@
+<!-- to-do: use auto-margins -->
 <nav class="navbar">
-  <ul class="menu">
+  <ul class="navbar-menu">
+    <li class="navbar-title">
+      <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+    </li>
     {{ with .Site.Menus.main }}
       {{ range . }}
-        <a class="navbar-item" href="{{ .URL | relURL }}"><b>{{ .Name }}</b></a>
+        <li>
+          <a class="navbar-item" href="{{ .URL | relURL }}">{{ .Name }}</a>
+        </li>
       {{ end }}
     {{ end }}
   </ul>
