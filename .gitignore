@@ -4,6 +4,7 @@
 !/archetypes/**
 !/layouts/**
 !/static/**
+!/assets/**
 !.gitignore
 !.prettierrc
 !package.json
