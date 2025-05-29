@@ -1,6 +1,7 @@
 @use "youtube";
 @use "tags";
 @use "footnote";
+@use "anchor";
 @use "colors" as *;
 
 :root {
@@ -45,23 +46,6 @@ a {
 a.title {
   font-weight: bold;
   line-height: 1rem;
-}
-
-.anchor {
-  color: $anchor-color;
-  opacity: 0;
-  text-decoration: none;
-  font-weight: 400;
-}
-
-:hover > .anchor,
-:target > .anchor,
-.anchor:focus {
-  opacity: 1;
-}
-
-.anchor::after {
-  content: "#";
 }
 
 /* ul { */
