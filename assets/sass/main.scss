@@ -81,9 +81,15 @@ main {
   margin: 0;
 }
 
+@mixin sticky {
+  position: sticky;
+  top: 0;
+}
+
 .sidebar {
   flex: none;
     width: 20%;
+  @include sticky;
 }
 
 .navbar-menu,
@@ -154,11 +160,6 @@ main {
 
 article {
     width: 80%;
-}
-
-.sticky {
-  position: sticky;
-  top: 0;
 }
 
 .post-title {
