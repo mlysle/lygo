@@ -87,13 +87,12 @@ main {
 
 .sidebar {
   flex: none;
+    width: 20%;
 }
 
-@media screen and (min-width: 1024px) {
-  .navbar-menu,
-  main {
-    max-width: 1344px;
-  }
+.navbar-menu,
+main {
+  max-width: 1344px;
 }
 
 .post-title {
@@ -157,28 +156,27 @@ main {
   flex-direction: column;
 }
 
+article {
+    width: 80%;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+}
+
+.post-title {
+  font-size: 4rem;
+  line-height: 1;
+}
+
 /* Mobile responsiveness */
-@media print, screen and (min-width: 769px) {
-  .hcard {
-    flex-direction: row;
-  }
+@media screen and (max-width: 768px) {
+  /* .hcard { */
+  /*   flex-direction: column; */
+  /* } */
   main {
     flex-direction: column;
-  }
-  .sidebar {
-    flex: none;
-    width: 20%;
-  }
-  article {
-    width: 80%;
-  }
-  .post-title {
-    font-size: 4rem;
-    line-height: 1;
-  }
-  .sticky {
-    position: sticky;
-    top: 0;
   }
 }
 
