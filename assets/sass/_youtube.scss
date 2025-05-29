@@ -1,6 +1,15 @@
 @use "colors";
-.youtube-player {
+
+.youtube-player, .invidious {
   margin-bottom: 1.5em;
+	width: 50%; /* for non-flex layout */
+  flex: 0 0 50%;
+}
+
+.video-row {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 2rem;
 }
 
 .video-description {
