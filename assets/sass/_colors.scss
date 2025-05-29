@@ -1,25 +1,9 @@
-$font-color: white;
-$primary-color: #cc6666;
-$secondary-color: #212845;
-$background-color: #1b1b23;
-$anchor-color: #cc6666;
-/* @media (prefers-color-scheme: dark) { */
-/*   :root { */
-/*     $font-color: white; */
-/*     $primary-color: #cc6666; */
-/*     $secondary-color: #212845; */
-/*     $background-color: #1b1b23; */
-/*     $anchor-color: #cc6666; */
-/*   } */
-/* } */
-/**/
-/* @media (prefers-color-scheme: light) { */
-/*   :root { */
-/*     $font-color: #333333; */
-/*     $primary-color: #cc6666; */
-/*     $secondary-color: #212845; */
-/*     $background-color: #f4f4f9; */
-/*     $anchor-color: #ebdbb2; */
-/*   } */
-/* } */
+:root {
+  color-scheme: light-dark;
+}
 
+$font-color: light-dark(#333333, white);
+$primary-color: light-dark(#cc6666, #cc6666);
+$secondary-color: light-dark(#218245, #212845);
+$background-color: light-dark(#f4f4f9, #1b1b23);
+$anchor-color: light-dark(#ebdbb2, #cc6666);
