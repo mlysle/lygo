@@ -30,6 +30,8 @@ body {
   min-height: 600;
   margin: 0 auto;
   background: 1b1b23;
+  display: flex;
+  flex-direction: column;
 }
 
 a {
