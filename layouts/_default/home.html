@@ -1,10 +1,10 @@
 {{ define "main" }}
   <div class="home">
     <header class="post-title">{{ .Site.Title }}</header>
-    <div class="content_column">
+    <article>
       {{ partial "site-intro.html" . }}
       {{ partial "bio-hcard.html" . }}
       <!-- {{ partial "blog-posts.html" . }} -->
-    </div>
+    </article>
   </div>
 {{ end }}
