@@ -1,9 +1,10 @@
 @use "colors";
 
 .youtube-player, .invidious {
+  // same size as videos in a video-row with a gap
+  width: calc(50% - 1rem);
+  margin: 0 auto;
   margin-bottom: 1.5em;
-	width: 50%; /* for non-flex layout */
-  flex: 0 0 50%;
 }
 
 .video-row {
@@ -11,6 +12,10 @@
 	flex-wrap: wrap;
   justify-content: space-around;
 	gap: 2rem;
+}
+
+.video-row > div {
+  flex: 1 1 0;
 }
 
 .video-description {
