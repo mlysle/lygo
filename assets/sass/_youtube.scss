@@ -1,3 +1,8 @@
+@use "colors";
 .youtube-player {
   margin-bottom: 1.5em;
+}
+
+.video-description {
+  background: colors.$secondary-color;
 }
