@@ -1,0 +1,9 @@
+/* surrond footnote links with brackets */
+a.footnote-ref::before {
+  content: "[";
+}
+
+a.footnote-ref::after {
+  content: "]";
+}
+

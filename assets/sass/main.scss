@@ -1,5 +1,6 @@
 @use "youtube";
 @use "tags";
+@use "footnote";
 @use "colors" as *;
 
 :root {
@@ -44,15 +45,6 @@ a {
 a.title {
   font-weight: bold;
   line-height: 1rem;
-}
-
-/* surrond footnote links with brackets */
-a.footnote-ref::before {
-  content: "[";
-}
-
-a.footnote-ref::after {
-  content: "]";
 }
 
 .anchor {
