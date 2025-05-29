@@ -1,8 +1,6 @@
 {{ define "main" }}
   <div class="home">
-    <div class="header-container">
-      <header class="post-title">{{ .Site.Title }}</header>
-    </div>
+    <header class="post-title">{{ .Site.Title }}</header>
     <div class="content_column">
       {{ partial "site-intro.html" . }}
       {{ partial "bio-hcard.html" . }}
