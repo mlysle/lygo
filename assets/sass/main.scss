@@ -1,6 +1,7 @@
 @use "youtube";
 @use "tags";
 @use "footnote";
+@use "navbar";
 @use "anchor";
 @use "colors" as *;
 
@@ -83,28 +84,6 @@ main {
   font-size: 2.25rem;
   line-height: 2.5rem;
   margin-top: 0;
-}
-
-.navbar {
-  background-color: $secondary-color;
-}
-
-.navbar-menu {
-  display: flex;
-  margin: 0 auto;
-  gap: 2rem;
-  padding: 12px;
-  list-style: none;
-  align-items: baseline;
-}
-
-.navbar-title {
-  font-size: 1.125rem;
-  margin-right: auto;
-}
-
-.navbar-item {
-  font-size: 0.875rem;
 }
 
 .blog-posts {
