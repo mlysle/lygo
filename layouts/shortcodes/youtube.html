@@ -4,7 +4,7 @@
 {{ $description := .Get "description" }}
 
 
-<div class="youtube-player">
+<figure class="youtube-player">
   <div
     style="position: relative; padding-bottom: 56.25%; height: 0; overflow:
     hidden;"
@@ -17,6 +17,6 @@
     ></iframe>
   </div>
   {{ with $description }}
-    <div class="video-description">{{ $description }}</div>
+    <figcaption class="video-description">{{ $description }}</figcaption>
   {{ end }}
-</div>
+</figure>
