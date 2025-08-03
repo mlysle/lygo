@@ -58,6 +58,7 @@ main {
   margin: 0 auto;
   padding: 12px;
   flex-grow: 1;
+  align-items: flex-start;
 }
 
 .column {
@@ -73,6 +74,10 @@ main {
   flex: none;
   width: 20%;
   @include sticky;
+  @media screen and (max-width: 768px) {
+      position: static;
+      top: auto;
+  }
 }
 
 .navbar-menu,
