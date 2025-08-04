@@ -1,0 +1,9 @@
+article {
+  grid-area: article;
+  display: flex;
+  flex-direction: column;
+  max-width: 60rem;
+  background: #1b1b23;
+  border: 2px solid #ebdbb2;
+  padding: 2rem;
+}

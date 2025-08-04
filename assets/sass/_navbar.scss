@@ -1,15 +1,17 @@
 @use "colors" as *;
 .navbar {
+  width: 100vw;
   background-color: $secondary-color;
 }
 
-.navbar-menu {
+.navbar-content {
   display: flex;
   margin: 0 auto;
   gap: 2rem;
-  padding: 12px;
+  padding: 12px 0;
   list-style: none;
   align-items: baseline;
+  max-width: 60rem;
 }
 
 .navbar-title {

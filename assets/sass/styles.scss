@@ -1,0 +1,43 @@
+@use "reset";
+@use "base";
+@use "navbar";
+@use "article";
+@use "tags";
+@use "youtube";
+@use "footnote";
+@use "anchor";
+
+
+/* TO-DO: Move everything below here somewhere else! */
+@use "colors" as *;
+
+a {
+  color: $primary-color;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* NAVIGATION */
+a.title {
+  font-weight: bold;
+  line-height: 1rem;
+}
+
+.avatar {
+  display: inline-block;
+  border-radius: 100%;
+  overflow: hidden;
+  width: 12rem;
+  object-fit: cover;
+  margin-right: 2rem;
+}
+
+.bio-container,
+.avatar_container {
+  align-self: center;
+}
+
+.hcard {
+  display: flex;
+  flex-direction: column;
+}
