@@ -1,7 +1,7 @@
 @use "colors" as *;
+
 .navbar {
-  width: 100vw;
-  background-color: $secondary-color;
+  font-size: 1.5rem;
 }
 
 .navbar-content {
@@ -11,11 +11,10 @@
   padding: 12px 0;
   list-style: none;
   align-items: baseline;
-  max-width: 60rem;
 }
 
 .navbar-title {
-  font-size: 1.125rem;
+  font-size: 1.125em;
   margin-right: auto;
 }
 

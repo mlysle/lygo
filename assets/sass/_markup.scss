@@ -1,0 +1,5 @@
+@use "colors" as *;
+
+strong, b {
+  color: $border-color
+}

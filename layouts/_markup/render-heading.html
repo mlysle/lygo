@@ -1,0 +1,4 @@
+<h{{ .Level }} id="{{ .Anchor | safeURL }}" class="article-header">
+{{- if and (ge .Level 1) (le .Level 6) -}}
+<a href="#{{.Anchor | safeURL }}">{{- .Text | safeHTML -}}</a>{{- end -}}
+</h{{ .Level }}>

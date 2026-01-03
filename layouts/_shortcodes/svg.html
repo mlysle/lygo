@@ -1,0 +1,8 @@
+{{ $resourcePath := printf "uploads/%s.svg" (.Get "name") }}
+{{ $id := .Get "id"}}
+
+{{ with resources.Get $resourcePath }}
+<div class="icon" {{- with $id }} id="{{ . }}"{{ end }}>
+  {{ .Content | replaceRE `fill=".*?"` `fill="currentColor"` | safeHTML }}
+  </div>
+{{ end }}

@@ -1,14 +1,8 @@
 @use "colors" as *;
 
-@mixin headings {
-    h1, h2, h3,
-    h4, h5, h6 {
-        @content;
-    }
-}
-
 html {
   scroll-behavior: smooth;
+  
 }
 
 body {
@@ -19,39 +13,43 @@ body {
   font-family: monospace;
 
   min-height: 100vh;
-
+  width: 100vw;
 
   display: flex;
   flex-direction: column;
   align-items: center;
 
   background-image: repeating-linear-gradient(
-    45deg,
-    #080808,        /* red */
-    #080808 10px,
-    #050505 10px,   /* green */
-    #050505 20px
+    -45deg,
+    #080808,
+    #080808 40px,
+    #050505 40px,
+    #050505 80px
   );
-  gap: 2rem;
-}
 
-main {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
+  @media screen and (max-width: 768px) {
+    font-size: 16px;
+  }
+  
 }
-
-/* body > * { */
-/*   padding: 0 1rem; */
-/* } */
 
 p, ul {
-  margin-bottom: 1rem;
   list-style-type: square;
-  list-style-position: inside;
-  }
-@include headings {
-    font: 32px/42px trajan-pro-1, trajan-pro-2;
-    text-align: center;
-    margin-bottom: 1.5rem;
+}
+
+p {
+  margin-block-start: 1.2em;
+}
+
+ul, ol {
+  margin-bottom: 1rem;
+}
+
+ol > li[id^="fn:"] {
+  margin-left: 2rem;
+}
+
+#forseti-logo > svg {
+  display: block;
+  height: 2.5em;
 }

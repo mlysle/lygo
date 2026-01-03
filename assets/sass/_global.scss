@@ -1,0 +1,10 @@
+@use "colors" as *;
+@use "mixins" as *;
+
+::selection {
+  background-color: $primary-color;
+}
+
+.icon {
+  @include color-on-hover;
+}

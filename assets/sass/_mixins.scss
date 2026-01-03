@@ -1,0 +1,10 @@
+@use "colors" as *;
+
+@mixin color-on-hover {
+  &:hover,
+  &:focus {
+    color: $primary-color;
+  }
+  transition: color 0.3s;
+}
+

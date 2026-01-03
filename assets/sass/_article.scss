@@ -1,9 +1,42 @@
-article {
-  grid-area: article;
-  display: flex;
-  flex-direction: column;
-  max-width: 60rem;
-  background: #1b1b23;
-  border: 2px solid #ebdbb2;
-  padding: 2rem;
+@use "colors" as *;
+@use "mixins" as *;
+
+// holds article and navbar
+.content {
+  width: 100%;
+  max-width: 60vw;
 }
+
+article {
+  overflow-x: hidden;
+  margin: 0 auto;
+  min-height: 100vh;
+
+  .email-me {
+    a {
+      display: inline-block;
+    }
+  }
+
+  h2 {
+    @include color-on-hover;
+  }
+
+  // Underline links
+  p {
+    a {
+      border-bottom: 2px solid $primary-color;
+      position: relative;
+    } 
+  }
+}
+
+.page-header {
+  font-size: 3em;
+  margin: 4rem 0 1rem 0;
+}
+
+article-header {
+    font: 2.5em trajan-pro-1;
+}
+

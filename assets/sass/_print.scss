@@ -1,0 +1,17 @@
+@media print {
+  header, footer, .email-me {
+    display: none;
+  }
+
+  .content {
+    max-width: revert;
+  }
+
+  a::after {
+    content: " (" attr(href) ")"; /* Show URLs after links */
+  }
+
+  p:has(img) {
+    break-inside: avoid;
+  }
+}
