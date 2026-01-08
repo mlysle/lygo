@@ -1,8 +1,7 @@
 @use "colors" as *;
 @use "mixins" as *;
 
-// holds article and navbar
-.content {
+.body {
   width: 100%;
   max-width: 60vw;
 }
@@ -12,31 +11,30 @@ article {
   margin: 0 auto;
   min-height: 100vh;
 
-  .email-me {
-    a {
-      display: inline-block;
-    }
-  }
+}
 
-  h2 {
-    @include color-on-hover;
-  }
-
-  // Underline links
-  p {
-    a {
-      border-bottom: 2px solid $primary-color;
-      position: relative;
-    } 
+.email-me {
+  a {
+    display: inline-block;
   }
 }
 
-.page-header {
+.link-text {
+    border-bottom: 0.125em solid $primary-color;
+    position: relative;
+}
+
+h1 {
   font-size: 3em;
   margin: 4rem 0 1rem 0;
 }
 
-article-header {
+.article-header {
     font: 2.5em trajan-pro-1;
-}
+    @include color-on-hover;
 
+    // for svg-header
+    a svg {
+      height: 1em;
+    }
+}

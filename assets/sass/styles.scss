@@ -7,21 +7,7 @@
 @use "footnote";
 @use "img";
 @use "markup";
-@use "page-header";
 @use "print";
 @use "global";
 @use "footer";
-
-/* TO-DO: Move everything below here somewhere else! */
-@use "colors" as *;
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-/* NAVIGATION */
-a.title {
-  font-weight: bold;
-  line-height: 1rem;
-}
+@use "typography";

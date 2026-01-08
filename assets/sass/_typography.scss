@@ -1,0 +1,25 @@
+@use "colors" as *;
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+// I forget where this is used.
+a.title {
+  font-weight: bold;
+  line-height: 1rem;
+}
+
+p {
+  // Not supported in Firefox at the moment
+  // https://caniuse.com/mdn-css_properties_text-wrap_pretty
+  text-wrap: pretty;
+
+  margin-block-start: 1.2em;
+}
+
+.page-header, .article-header {
+  text-wrap: balance;
+}
+

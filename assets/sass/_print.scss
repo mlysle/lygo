@@ -1,13 +1,13 @@
 @media print {
-  header, footer, .email-me {
+  .site-header, footer, .email-me {
     display: none;
   }
 
-  .content {
+  .body {
     max-width: revert;
   }
 
-  a::after {
+  article p a::after {
     content: " (" attr(href) ")"; /* Show URLs after links */
   }
 

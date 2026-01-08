@@ -7,7 +7,7 @@
     {{ with .Site.Menus.main }}
       {{ range . }}
         <li>
-          <a class="navbar-item" href="{{ .URL | relURL }}">{{ .Name }}</a>
+          <a class="navbar-item" href="{{ .URL | relURL }}">{{- .Name -}}</a>
         </li>
       {{ end }}
     {{ end }}

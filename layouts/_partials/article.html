@@ -1,12 +1,12 @@
 <article>
-  {{ if .Title }}
-    <h1 class="page-header">{{ .Title }}</h1>
-  {{ end }}
-  {{ partial "post-header.html" . }}
+  {{ partial "post-header" .}}
+  {{ partial "table-of-contents.html" . }}
+  <div class="post-content">
   {{ .Content }}
+  </div>
   <br>
+  {{ partial "taglist.html" . }}
   {{ if eq .Type "posts" }}
     {{ partial "email-me.html" . }}
   {{ end }}
-  {{ partial "taglist.html" . }}
 </article>

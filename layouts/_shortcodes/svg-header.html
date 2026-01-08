@@ -1,0 +1,11 @@
+<!-- Special Purpose for my "Forseti Lebt" article -->
+{{ $resourcePath := printf "uploads/%s.svg" (.Get "name") }}
+{{ $id := .Get "name" | urlize }}
+
+{{ with resources.Get $resourcePath }}
+<h2 id="{{ $id }}" class="article-header"> 
+<a href="#{{- $id -}} ">
+  {{ .Content | safeHTML }}
+  </a>
+</h2>
+{{ end }}
