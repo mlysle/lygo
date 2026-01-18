@@ -1,12 +1,9 @@
-<article>
+<article class="article">
   {{ partial "post-header" .}}
   {{ partial "table-of-contents.html" . }}
   <div class="post-content">
   {{ .Content }}
   </div>
   <br>
-  {{ partial "taglist.html" . }}
-  {{ if eq .Type "posts" }}
-    {{ partial "email-me.html" . }}
-  {{ end }}
+  {{ partial "post-footer" .}}
 </article>

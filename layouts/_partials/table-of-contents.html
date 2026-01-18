@@ -1,5 +1,3 @@
-{{ if .TableOfContents }}
-<div class="toc">
+{{ if in .TableOfContents "li" }}
 {{ .TableOfContents | safeHTML }}
-</div>
 {{ end }}

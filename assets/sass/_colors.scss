@@ -2,10 +2,7 @@
   color-scheme: light dark;
 }
 
-$font-color: light-dark(#333333, white);
-$primary-color: light-dark(#cc6666, #cc6666);
-$secondary-color: light-dark(#ebdbb2, #1b1b23);
-$background-color: light-dark(#f4f4f9, #1b1b23);
-$anchor-color: light-dark(#ebdbb2, #cc6666);
+$font-color: light-dark(#333333, #e0e0e0);
+$primary-color: #cc6666;
 
-$border-color: light-dark(#ebdbb2, #ebdbb2);
+$background-color: light-dark(#ebdbb2, #1b1b23);

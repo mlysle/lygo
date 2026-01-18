@@ -1,0 +1,7 @@
+{{ if eq .Type "posts" }}
+<div class="post-footer">
+  {{ partial "taglist.html" . }}
+  {{ partial "email-me.html" . }}
+  {{ partial "further-reading" . }}
+</div>
+{{ end }}

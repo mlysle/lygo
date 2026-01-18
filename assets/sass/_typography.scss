@@ -2,8 +2,7 @@
 
 a {
   text-decoration: none;
-  color: inherit;
-}
+  color: inherit; }
 
 // I forget where this is used.
 a.title {
@@ -16,10 +15,24 @@ p {
   // https://caniuse.com/mdn-css_properties_text-wrap_pretty
   text-wrap: pretty;
 
-  margin-block-start: 1.2em;
+  margin-top: 1.2em;
 }
 
 .page-header, .article-header {
   text-wrap: balance;
 }
 
+blockquote {
+  box-sizing: border-box;
+  padding: 0 14px;
+  border-left: 3px solid $primary-color;
+}
+
+.post-date {
+  font-style: italic;
+  font-size: smaller;
+}
+
+h1 {
+  font-size: 3em;
+}

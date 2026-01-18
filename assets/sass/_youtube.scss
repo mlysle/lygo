@@ -1,6 +1,6 @@
 @use "colors";
 
-.youtube-player, .invidious {
+.youtube-player {
   // same size as videos in a video-row with a gap
   width: calc(50% - 1rem);
   margin: 0 auto;

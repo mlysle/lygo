@@ -1,28 +1,3 @@
 {{ define "main" }}
-  <article>
-    {{ if .Title }}
-      <h1 class="page-header">
-        {{- .Title -}}
-      </h1>
-    {{ end }}
-    {{ if .Content }}
-      {{ .Content }}
-    {{ end }}
-    {{ range (where .Pages "Type" "in" (slice "posts")).GroupByDate "2006" }}
-      <ul>
-        {{ range .Pages }}
-          <li>
-            <h3>
-              <a
-                class="title"
-                href="{{ .Params.externalLink | default .RelPermalink }}"
-              >
-                {{- .Title -}}
-              </a>
-            </h3>
-          </li>
-        {{ end }}
-      </ul>
-    {{ end }}
-  </article>
+  {{ partial "paginator" . }}
 {{ end }}

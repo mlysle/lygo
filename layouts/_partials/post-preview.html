@@ -1,0 +1,16 @@
+<li>
+  <article class="article article--preview">
+    <header>
+      <h2>
+        <a class="title" href="{{ .Params.externalLink | default .RelPermalink }}" >{{- .Title -}}</a>
+      </h2>
+      <time class="post-date">{{ .Date.Format "6 Jan, 2006" }}</time>
+    </header>
+    <div class="summary">
+      {{ .Summary }}
+      {{ if .Truncated }}
+        <a href="{{ .RelPermalink }}">More ...</a>
+      {{ end }}
+    </div>
+  </article>
+</li>

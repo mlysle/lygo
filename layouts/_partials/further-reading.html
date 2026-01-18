@@ -1,0 +1,14 @@
+<nav class="further-reading">
+  {{ with .PrevInSection }}
+  <div class="previous">
+    <span>Previous</span>
+    <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+  </div>
+  {{ end }}
+  {{ with .NextInSection }}
+  <div class="next">
+    <span>Next</span>
+    <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+  </div>
+  {{ end }}
+</nav>

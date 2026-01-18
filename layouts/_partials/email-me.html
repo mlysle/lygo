@@ -1,5 +1,5 @@
 {{- $email := site.Params.Author.email -}}
 <div class="email-me">
   Reply to this post via
-  <a href="mailto:{{ $email }}?subject=Re: {{ .Title | safeHTML }}">email</a>
+  <a class="email-link" href="mailto:{{ $email }}?subject=Re: {{ .Title | safeHTML }}">email</a>.
 </div>

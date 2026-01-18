@@ -8,3 +8,7 @@
 .icon {
   @include color-on-hover;
 }
+
+hr {
+  margin: .75rem auto;
+}

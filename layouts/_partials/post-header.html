@@ -1,6 +1,8 @@
 {{ if .Title }}
 <header class="post-header">
   <h1 class="post-header">{{ .Title }}</h1>
+  {{ if eq .Kind "page" }}
   {{ partial "post-date.html" . }}
+  {{ end }}
 </header>
 {{ end }}
