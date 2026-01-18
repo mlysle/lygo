@@ -6,10 +6,8 @@
 }
 
 .article {
-  min-height: 100vh;
-  background: $background-color;
+  min-height: 100vh; background: $background-color;
   border-radius: 0.2em;
-  box-shadow: 0 1px 2px 0 #000000, 0 2px 5px 0 #000000;
   border: 2px solid $primary-color;
   margin-top: 1.5em;
   margin-bottom: 1.5em; 
@@ -42,4 +40,20 @@
     a svg {
       height: 1em;
     }
+}
+
+
+.post-header {
+  font-weight: 400;
+}
+
+.summary p {
+  margin-bottom: 1em;
+}
+
+.read-more {
+  display: block;       /* makes it shrink to fit content */
+  background: $primary-color;  /* your button color */
+  text-align: center;          /* center text inside the button */
+  margin: 0 auto;
 }
